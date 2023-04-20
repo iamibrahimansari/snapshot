@@ -1,0 +1,34 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .title{
+        font-size: 5rem;
+    }
+    .search{
+        width: 50%;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: 90% auto;
+        input{
+            border: none;
+            outline: none;
+            box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+            font-size: 1.6rem;
+            padding-inline: 1rem;
+        }
+        button{
+            font-size: 2rem;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+    }
+    .category-btns{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+}
