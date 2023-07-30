@@ -10,7 +10,7 @@ const App = () => {
   }
   const handleOnChange = event =>{
     let inputValue = event.target.value;
-    inputValue = inputValue[0].toUpperCase() + inputValue.slice(1).toLowerCase();
+    inputValue = inputValue && (inputValue[0].toUpperCase() + inputValue.slice(1).toLowerCase());
     setSearchKw(inputValue);
   }
   return (

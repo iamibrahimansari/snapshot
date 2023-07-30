@@ -4,8 +4,7 @@ import axios from 'axios';
 
 const Gallery = () => {
     const [images, setImages] = useState([]);
-    const temp = useContext(GalleryContext);
-    useEffect(() => {
+    const temp = useContext(GalleryContext);    useEffect(() => {
         const fetchImages = async () => {
             const response = await axios.get(
                 `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=fbdb26cbe6c25a8dcdece034d4c7d35a&tags=${temp}&per_page=20&format=json&nojsoncallback=1`
@@ -21,6 +20,7 @@ const Gallery = () => {
     }, [temp]);
 
     return (
+		temp &&
         <div className="gallery">
             <h2>{temp && `${temp} Pictures`}</h2>
             {

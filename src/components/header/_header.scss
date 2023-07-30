@@ -5,19 +5,13 @@
     .title{
         font-size: 5rem;
     }
-    .search{
-        width: 50%;
-        margin-inline: auto;
-        display: grid;
-        grid-template-columns: 90% auto;
-        input{
-            border: none;
-            outline: none;
-            box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
-            font-size: 1.6rem;
-            padding-inline: 1rem;
-        }
-    }
+	input{
+		padding: 0.5rem;
+		border: 2px solid powderblue;
+		border-radius: 5px;
+		width: 50%;
+		margin-inline: auto;
+	}
     .category-btns{
         display: flex;
         gap: 2rem;
