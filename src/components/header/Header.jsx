@@ -8,9 +8,6 @@ const Header = ({handleOnChange, handleOnClick}) =>{
             <h1 className="title">SnapShot</h1>
             <div className="search">
                 <input onChange={handleOnChange} type="search" placeholder="Search..." />
-                <button type="button">
-                    <MdSearch />
-                </button>
             </div>
             <div className="category-btns">
                 {categories.map(category => <button onClick={() => handleOnClick(category)} key={category} type="button">{category}</button>)}
